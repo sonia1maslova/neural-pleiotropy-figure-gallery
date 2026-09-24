@@ -6,7 +6,7 @@
   <meta name="description" content="Static gallery for neural pleiotropy analysis figures.">
   <title>Neural Pleiotropy Figure Gallery</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23416b96'/%3E%3Ccircle cx='22' cy='23' r='9' fill='white'/%3E%3Ccircle cx='42' cy='23' r='9' fill='white'/%3E%3Ccircle cx='32' cy='42' r='9' fill='white'/%3E%3Cpath d='M26 28l4 7m8-7l-4 7M30 23h4' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="static/style.css?v=fef991fb">
 </head>
 <body>
   <header class="site-header">
@@ -108,7 +108,14 @@
         <div id="viewer-name" class="viewer-name"></div>
         <div id="viewer-path" class="viewer-path"></div>
       </div>
-      <button id="viewer-close" type="button">Close</button>
+      <div class="viewer-actions" role="group" aria-label="Image display mode">
+        <span class="viewer-fit-label">View</span>
+        <button class="viewer-fit-button" data-fit="contain" type="button">Fit screen</button>
+        <button class="viewer-fit-button" data-fit="width" type="button">Fit width</button>
+        <button class="viewer-fit-button" data-fit="height" type="button">Fit height</button>
+        <button class="viewer-fit-button" data-fit="actual" type="button">100%</button>
+        <button id="viewer-close" type="button">Close</button>
+      </div>
     </div>
     <div class="viewer-body">
       <button id="viewer-prev" class="viewer-nav" type="button" aria-label="Previous figure">‹</button>
@@ -121,6 +128,6 @@
     <p class="noscript">JavaScript is required to browse this figure gallery.</p>
   </noscript>
 
-  <script src="static/app.js" defer></script>
+  <script src="static/app.js?v=fef991fb" defer></script>
 </body>
 </html>
